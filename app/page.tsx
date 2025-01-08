@@ -1,9 +1,28 @@
+"use client";
+
 import { Box, Image, Text, VStack, Heading, Button, Flex } from "@chakra-ui/react";
+
+
+
+const GoToFormButton = () => {
+    const handleClick = () => {
+        // Replace the URL below with the URL you want to open
+        const url = 'https://forms.gle/svWmUjduAJ9TRLTj6';
+
+        // Opens the URL in a new tab
+        window.open(url, '_blank');
+    };
+
+    return (
+        <Button variant="solid" onClick={handleClick}>
+            Je m'inscrit tout de suite !
+        </Button>
+    );
+};
 
 export default function Home() {
     return (
-        <
-            >
+        <>
             <Box
                 as="header"
                 bg="lightOrange.300"
@@ -53,7 +72,7 @@ export default function Home() {
 
             </VStack>
 
-            <Flex justify="center" mt={20}><Button variant="solid" >Je m'inscrit tout de suite ! </Button></Flex>
+            <Flex justify="center" mt={20}><GoToFormButton /></Flex>
         </>
     );
 }
