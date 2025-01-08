@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Image, Text, VStack, Heading, Button, Flex } from "@chakra-ui/react";
+import { Box, Image, Text, VStack, Heading, Button, Flex, Link } from "@chakra-ui/react";
 
 
 
@@ -19,6 +19,14 @@ const GoToFormButton = () => {
         </Button>
     );
 };
+
+const CustomLink = ({ children, ...props }) => {
+    return (
+        <Link color="lightOrange.600" {...props}>
+            {children}
+        </Link>
+    );
+}
 
 export default function Home() {
     return (
@@ -50,7 +58,7 @@ export default function Home() {
                     Au programme : des concerts, des spectacles et pleins d’activités ! Le twist? C’est vous les artistes ! Envie de jouer d’un instrument en groupe ? D’organiser un spectacle d’impro? jeu télévisé ? De tenir le stand maquillage ? Tout est possible !
                 </Text>
                 <Text>
-                    “Eh mais moi j’ai aucun skills et j’ai pas d’idée” Pas de souci, on a un tas d’idée pour vous.
+                    <Text as="span" fontStyle="italic">“Eh mais moi j’ai aucun skills et j’ai pas d’idée”</Text> Pas de souci, on a un tas d’idée pour vous.
                 </Text>
                 <Text>
                     Tu préfère profiter en regardant les animations depuis la pistoche sans prendre le micro ? C’est évidemment possible. La seule condition c’est de kiffer !
@@ -60,8 +68,8 @@ export default function Home() {
                 </Text>
 
                 <Heading>C'est où ?</Heading>
-                <Text>Le festival aura lieu dans l’Ecolo-gite du moulin de Brissac au milieu des vignes dans la magnifique région d’Anjou, gracieusement prêté par la famille Bertin.</Text>
-                <Text>La gare la plus proche est Angers-Saint-Laud avec des trains directs depuis Paris et Lyon. Ensuite, la ligne de bus Aleop 427 vous amènera jusqu’à Brissac. Nous organiserons également des navettes en fonction des heures d’arrivée.</Text>
+                <Text>Le festival aura lieu dans <CustomLink href="https://maps.app.goo.gl/BYzAyeVGCLXTztko7">l’Ecolo-gite du moulin de Brissac</CustomLink> au milieu des vignes dans la magnifique région d’Anjou, gracieusement prêté par la famille Bertin.</Text>
+                <Text>La gare la plus proche est Angers-Saint-Laud avec des trains directs depuis Paris et Lyon. Ensuite, la ligne de bus <CustomLink href="https://aleop.paysdelaloire.fr/je-recherche-un-horaire-aleop?field_transport_type=5&city_title=Brissac-Loire-Aubance&ligne_number=">Aleop 427</CustomLink> vous amènera jusqu’à Brissac. Nous organiserons également des navettes en fonction des heures d’arrivée.</Text>
                 <Text>Qui dit festival dit camping ! Tu auras tout un champ pour planter tes sardines !</Text>
 
                 <Heading>C'est quand ?</Heading>

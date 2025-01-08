@@ -10,6 +10,7 @@ const theme = extendTheme({
             300: '#ffc46b', // Base color
             400: '#ff9c3b', // Darker shade
             500: '#ff7a00', // Darkest shade
+            600: '#e66e00',
         },
     },
     components: {
