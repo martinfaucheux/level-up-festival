@@ -1,8 +1,11 @@
 "use client";
 
-import { Box, Image, Text, VStack, Heading, Button, Flex, Link } from "@chakra-ui/react";
+import React, { ReactNode } from "react";
+import { Box, Image, Text, VStack, Heading, Button, Flex, Link, LinkProps } from "@chakra-ui/react";
 
-
+interface CustomLinkProps extends LinkProps {
+    children: ReactNode;
+}
 
 const GoToFormButton = () => {
     const handleClick = () => {
@@ -20,7 +23,7 @@ const GoToFormButton = () => {
     );
 };
 
-const CustomLink = ({ children, ...props }) => {
+const CustomLink = ({ children, ...props }: LinkProps) => {
     return (
         <Link color="lightOrange.600" {...props}>
             {children}
