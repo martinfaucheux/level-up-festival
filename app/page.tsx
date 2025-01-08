@@ -4,26 +4,22 @@ export default function Home() {
     return (
         <
             >
-            {/* Top Banner */}
             <Box
                 as="header"
-                bg="teal.500"
+                bg="lightOrange.300"
                 color="white"
                 py={4}
                 textAlign="center"
-                // borderRadius="md"
                 mb={8}
             >
                 <Image
-                    src="/images/logo.png" // Replace with your logo path
+                    src="/images/logo.png"
                     alt="Logo"
                     w={300}
-                    // boxSize="100px"
                     mx="auto"
                 />
             </Box>
 
-            {/* Content Section */}
             <VStack spacing={3} align="start" px={200}>
                 <Heading>
                     L'Evènement de 2025
@@ -40,8 +36,8 @@ export default function Home() {
                 <Text>
                     Tu préfère profiter en regardant les animations depuis la pistoche sans prendre le micro ? C’est évidemment possible. La seule condition c’est de kiffer !
                 </Text>
-                <Text>
-                    Plus d’infos sur les activités seront communiquées dans les mois à venir
+                <Text fontStyle="italic">
+                    Plus d’infos sur les activités seront communiquées dans les mois à venir.
                 </Text>
 
                 <Heading>C'est où ?</Heading>
@@ -57,7 +53,7 @@ export default function Home() {
 
             </VStack>
 
-            <Flex justify="center" mt={20}><Button colorScheme='teal' >Je m'inscrit tout de suite! </Button></Flex>
+            <Flex justify="center" mt={20}><Button variant="solid" >Je m'inscrit tout de suite ! </Button></Flex>
         </>
     );
 }
