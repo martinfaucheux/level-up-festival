@@ -18,7 +18,7 @@ const GoToFormButton = () => {
 
     return (
         <Button variant="solid" onClick={handleClick}>
-            Je m'inscrit tout de suite !
+            Je m'inscris tout de suite !
         </Button>
     );
 };
@@ -71,7 +71,7 @@ export default function Home() {
                 </Text>
 
                 <Heading>C'est où ?</Heading>
-                <Text>Le festival aura lieu à <CustomLink href="https://labime.com/">l’Abîme</CustomLink>, un beau domaine de Bourgogne à 30 minutes d'Auxerre.</Text>
+                <Text>Le festival aura lieu à <CustomLink href="https://labime.com/">l’Abîme</CustomLink>, un beau domaine dans l'Yonne à 30 minutes d'Auxerre.</Text>
                 <Text>C'est à 2 heure de Paris en voiture. Nous créerons une discussion whatsapp pour coordonner les potentiels covoiturages un peu plus tard.</Text>
                 <Text>Qui dit festival dit camping ! Tu auras plusieurs hectares pour planter tes sardines !</Text>
 
