@@ -64,21 +64,21 @@ export default function Home() {
                     <Text as="span" fontStyle="italic">“Eh mais moi j’ai aucun skills et j’ai pas d’idée”</Text> Pas de souci, on a un tas d’idée pour vous.
                 </Text>
                 <Text>
-                    Tu préfère profiter en regardant les animations depuis la pistoche sans prendre le micro ? C’est évidemment possible. La seule condition c’est de kiffer !
+                    Tu préfère profiter en regardant les animations sans prendre le micro ? C’est évidemment possible. La seule condition c’est de kiffer !
                 </Text>
                 <Text fontStyle="italic">
                     Plus d’infos sur les activités seront communiquées dans les mois à venir.
                 </Text>
 
                 <Heading>C'est où ?</Heading>
-                <Text>Le festival aura lieu dans <CustomLink href="https://maps.app.goo.gl/BYzAyeVGCLXTztko7">l’Ecolo-gite du moulin de Brissac</CustomLink> au milieu des vignes dans la magnifique région d’Anjou, gracieusement prêté par la famille Bertin.</Text>
-                <Text>La gare la plus proche est Angers-Saint-Laud avec des trains directs depuis Paris et Lyon. Ensuite, la ligne de bus <CustomLink href="https://aleop.paysdelaloire.fr/je-recherche-un-horaire-aleop?field_transport_type=5&city_title=Brissac-Loire-Aubance&ligne_number=">Aleop 427</CustomLink> vous amènera jusqu’à Brissac. Nous organiserons également des navettes en fonction des heures d’arrivée.</Text>
-                <Text>Qui dit festival dit camping ! Tu auras tout un champ pour planter tes sardines !</Text>
+                <Text>Le festival aura lieu à <CustomLink href="https://labime.com/">l’Abîme</CustomLink>, un beau domaine de Bourgogne à 30 minutes d'Auxerre.</Text>
+                <Text>C'est à 2 heure de Paris en voiture. Nous créerons une discussion whatsapp pour coordonner les potentiels covoiturages un peu plus tard.</Text>
+                <Text>Qui dit festival dit camping ! Tu auras plusieurs hectares pour planter tes sardines !</Text>
 
                 <Heading>C'est quand ?</Heading>
-                <Text>Le festival durera 3 jours mais si tu veux le prendre en cours de route c’est aussi possible. Saches juste que la big party sera le samedi soir. </Text>
+                <Text>Le festival durera du <strong>vendredi 12 au dimanche 14 septembre</strong> mais si tu veux le prendre en cours de route c’est aussi possible. Saches juste que la big party sera le samedi soir. </Text>
                 <Text>On te propose deux dates. Celle qui aura le plus de votes sera retenue.</Text>
-                <Text >Le ticket d’entrée est à 20 EUR par personne et après c’est du all inclusive !</Text>
+                <Text >Le ticket d’entrée est à 40 EUR par personne et après c’est du all inclusive !</Text>
 
 
             </VStack>
