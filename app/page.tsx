@@ -106,7 +106,7 @@ export default function Home() {
       <a
         href="https://forms.gle/svWmUjduAJ9TRLTj6"
         target="_blank"
-        className="mb-20 md:mb-0 text-2xl my-5 flex justify-center w-100 border-2 border-primary rounded-lg mx-auto"
+        className="mb-20 md:mb-5 text-2xl my-5 flex justify-center w-100 border-2 border-primary rounded-lg mx-auto"
       >
         JE M'INSCRIS
       </a>
