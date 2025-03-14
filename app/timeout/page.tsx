@@ -33,10 +33,8 @@ export default function Timeout() {
     return () => clearTimeout(timer);
   }, [remaining, ticking]);
   return (
-    <div className="h-lvh text-7xl flex justify-center items-center">
-      <div className="px-10 py-10 border-2 border-primary rounded-lg text-primary">
-        {remaining}
-      </div>
+    <div className="w-full text-5xl flex justify-center items-center my-5 md:my-0">
+        <div className="px-10 py-10 border-2 rounded-lg">{remaining}</div>
     </div>
   );
 }
