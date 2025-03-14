@@ -8,7 +8,7 @@ export default function Timeout() {
   const getRemainingTime = () => {
     const now = new Date().getTime();
     return dateFestival - now;
-  }
+  };
 
   const getDigits = () => {
     const distance = getRemainingTime();
@@ -26,17 +26,17 @@ export default function Timeout() {
     [remaining, setRemaining] = useState(getDigits());
 
   useEffect(() => {
-    const timer = setTimeout(
-      () => ticking && setRemaining(getDigits()),
-      1e3
-    );
+    const timer = setTimeout(() => ticking && setRemaining(getDigits()), 1e3);
     return () => clearTimeout(timer);
   }, [remaining, ticking]);
 
   const units = ["Jours", "Heures", "Minutes", "Secondes"];
-  
+
   return (
     <div className="w-full text-5xl flex justify-center items-center my-5 mx-5 md:my-0">
+      {getRemainingTime() < 0 ? (
+        <div>IT'S ON BIAAATCH</div>
+      ) : (
         <div className="flex justify-center gap-4">
           {remaining.map((unit, index) => (
             <div
@@ -47,7 +47,8 @@ export default function Timeout() {
               <span className="text-xs uppercase">{units[index]}</span>
             </div>
           ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
