@@ -17,7 +17,11 @@ export default function Home() {
       <div className="flex md:grid grid-cols-3 gap-4">
         <div className="hidden md:flex mt-40 flex-col items-center">
           <img className="mb-10" src="/images/truites.jpeg" alt="Image 1" />
-          <img className="mb-10" src="/images/madame_contente.jpeg" alt="Image 1"/>
+          <img
+            className="mb-10"
+            src="/images/madame_contente.jpeg"
+            alt="Image 1"
+          />
           <img src="/images/fun_peoples.jpeg" alt="Image 1" />
         </div>
         <div className="mx-5">
@@ -58,23 +62,35 @@ export default function Home() {
             whatsapp pour coordonner les potentiels covoiturages un peu plus
             tard.
           </div>
-          <div className="my-3">
-            Qui dit festival dit camping ! Tu auras plusieurs hectares pour
-            planter tes sardines !
-          </div>
 
           <div className="my-5 text-2xl">C'est quand ?</div>
           <div className="my-3">
             Le festival durera du{" "}
             <strong>vendredi 12 au dimanche 14 septembre</strong> mais si tu
-            veux le prendre en cours de route c’e st aussi possible. Saches juste
+            veux le prendre en cours de route c’est aussi possible. Saches juste
             que la big party sera le samedi soir.{" "}
           </div>
+          <div className="my-5 text-2xl">
+            Qu'est ce qui est inclus dans les ticket early bird?
+          </div>
           <div className="my-3">
-            Le ticket d’entrée est à 45 EUR par personne et après c’est du all
-            inclusive !
+            Le ticket d’entrée est à <b>45 €</b> par personne et après c’est du
+            all inclusive ! Bon à ce prix là on ne brûlera pas d'effigie en
+            bois...
+          </div>
+          <div className="my-3">
+            Qui dit festival dit camping ! Tu auras plusieurs hectares pour
+            planter tes sardines ! Si tu n'es pas un punk à chien ou que tes
+            vieux lombaires supportent difficilement le matelas gonflable, des
+            contacts de gîtes seront communiqués ultérieurement sur le site
+            (dont un sur le domaine).
           </div>
 
+          <div className="my-5 text-2xl">Autres infos</div>
+          <div className="my-3">
+            Pas de thème en particulier, viens comme tu viendrais à un festival
+            (paillettes appréciées).
+          </div>
           <div className="flex justify-center items-center my-5">
             <a
               href="https://forms.gle/svWmUjduAJ9TRLTj6"
@@ -86,8 +102,12 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden md:flex mt-2 flex flex-col items-center">
-          <img className="mb-10" src="/images/barney-stinson-dancing.gif" alt="Image 1" />
-          <img className="mb-10" src="/images/windu_perso.gif" alt="Image 1"/>
+          <img
+            className="mb-10"
+            src="/images/barney-stinson-dancing.gif"
+            alt="Image 1"
+          />
+          <img className="mb-10" src="/images/windu_perso.gif" alt="Image 1" />
           {/* <img className="mb-10" src="/images/party.gif" alt="Image 1" /> */}
           <img src="/images/meme.png" alt="Image 1" />
         </div>
