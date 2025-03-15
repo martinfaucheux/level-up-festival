@@ -41,9 +41,9 @@ export default function Timeout() {
           {remaining.map((unit, index) => (
             <div
               key={index}
-              className="w-30 h-30 flex flex-col items-center justify-center bg-[#d66d1d] text-white rounded-full shadow-lg"
+              className="w-12 h-12 md:w-30 md:h-30 flex flex-col items-center justify-center bg-[#d66d1d] text-white rounded-full shadow-lg"
             >
-              <span className="text-3xl font-bold">{unit}</span>
+              <span className="text-xl md:text-3xl font-bold">{unit}</span>
               <span className="text-xs uppercase">{units[index]}</span>
             </div>
           ))}
