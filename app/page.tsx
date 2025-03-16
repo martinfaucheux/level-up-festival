@@ -78,8 +78,7 @@ export default function Home() {
           </div>
           <div className="my-3">
             Le ticket d’entrée est à <b>45 €</b> par personne et après c’est du
-            all inclusive ! Bon à ce prix là on ne brûlera pas d'effigie en
-            bois...
+            all inclusive !
           </div>
           <div className="my-3">
             Qui dit festival dit camping ! Tu auras plusieurs hectares pour
