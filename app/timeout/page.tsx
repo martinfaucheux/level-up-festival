@@ -30,10 +30,10 @@ export default function Timeout() {
     return () => clearTimeout(timer);
   }, [remaining, ticking]);
 
-  const units = ["Jours", "Heures", "Minutes", "Secondes"];
+  const units = ["jours", "heures", "minutes", "secondes"];
 
   return (
-    <div className="w-full text-5xl flex justify-center items-center my-5 mx-5 md:my-0">
+    <div className="w-full text-5xl flex justify-center items-center my-5 md:mx-5 md:my-0">
       {getRemainingTime() < 0 ? (
         <div>IT'S ON BIAAATCH</div>
       ) : (
@@ -41,10 +41,10 @@ export default function Timeout() {
           {remaining.map((unit, index) => (
             <div
               key={index}
-              className="w-12 h-12 md:w-30 md:h-30 flex flex-col items-center justify-center bg-[#d66d1d] text-white rounded-full shadow-lg"
+              className="w-20 h-20 md:w-30 md:h-30 flex flex-col items-center justify-center bg-[#d66d1d] text-white rounded-full shadow-lg"
             >
               <span className="text-xl md:text-3xl font-bold">{unit}</span>
-              <span className="text-xs uppercase">{units[index]}</span>
+              <span className="text-xs">{units[index]}</span>
             </div>
           ))}
         </div>

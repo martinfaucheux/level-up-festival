@@ -94,6 +94,11 @@ export default function Home() {
             Pas de thème en particulier, viens comme tu viendrais à un festival
             (paillettes appréciées).
           </div>
+          <img
+            className="my-10 max-w-[300px] md:hidden mx-auto"
+            src="/images/windu_perso.gif"
+            alt="Image 1"
+          />
           <div className="flex justify-center items-center my-5">
             <a
               href="https://forms.gle/svWmUjduAJ9TRLTj6"
@@ -104,7 +109,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="hidden md:flex mt-2 flex flex-col items-center  max-w70">
+        <div className="hidden md:flex mt-2 flex flex-col items-center">
           <img
             className="mb-10 mb-10 max-w-[300px]"
             src="/images/barney-stinson-dancing.gif"
