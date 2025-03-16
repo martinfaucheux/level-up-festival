@@ -23,6 +23,9 @@ export default function Home() {
             alt="Image 1"
           />
           <img src="/images/fun_peoples.jpeg" alt="Image 1" />
+          <div className="mb-10 italic text-stone-500">
+            vraies photos du site de l'abîme
+          </div>
         </div>
         <div className="mx-5">
           <div className="my-5 text-2xl">L'Evènement de 2025</div>
@@ -101,15 +104,27 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="hidden md:flex mt-2 flex flex-col items-center">
+        <div className="hidden md:flex mt-2 flex flex-col items-center  max-w70">
           <img
-            className="mb-10"
+            className="mb-10 mb-10 max-w-[300px]"
             src="/images/barney-stinson-dancing.gif"
             alt="Image 1"
           />
-          <img className="mb-10" src="/images/windu_perso.gif" alt="Image 1" />
-          {/* <img className="mb-10" src="/images/party.gif" alt="Image 1" /> */}
-          <img src="/images/meme.png" alt="Image 1" />
+          <img
+            className="mb-10 mb-10 max-w-[300px]"
+            src="/images/windu_perso.gif"
+            alt="Image 1"
+          />
+          <img
+            className="mb-10 mb-10 max-w-[300px]"
+            src="/images/party.gif"
+            alt="Image 1"
+          />
+          <img
+            className="mb-10 mb-10 max-w-[300px]"
+            src="/images/meme.png"
+            alt="Image 1"
+          />
         </div>
       </div>
     </>
